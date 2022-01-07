@@ -7,16 +7,20 @@ Also, in the text file, enter each address in a separate line and don't put any 
 To initiate the java code,
 ### For Linux/Mac
 Compile
+
 ```javac -cp "./lib/*" AddressSearch.java```
 
 Run
+
 ```java -cp "./lib/*" AddressSearch.java```
 
 ### For Windows
 Compile
+
 ```javac -classpath '.;.\lib\*' AddressSearch.java```
 
 Run
+
 ```java -classpath '.;.\lib\*' AddressSearch```
 
 This will use the packages in the lib directory, in case you don't have them installed.
@@ -24,6 +28,7 @@ This will use the packages in the lib directory, in case you don't have them ins
 After running it, the addresses in `docs` directory will be indexed by lucene.
 
 After it is indexed, you will be asked to enter the query address. It will then process the address and give you the addresses it thinks are on the same street as the query address. If it thinks there is no street in the query address it will output
+
 ```Could not locate a street term```
 
 and ask you to enter it again.
